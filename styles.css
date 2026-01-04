@@ -1,0 +1,20 @@
+/* Basic, lightweight styles for the Livestock page */
+:root{
+  --bg:#f7faf7;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111}
+.container{max-width:980px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg,#ffffff88,var(--bg));border-bottom:1px solid #e6eaea}
+.site-header .container{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+h1{margin:0;font-size:28px}
+.tag{color:var(--muted);margin:0}
+.github-btn{display:inline-block;margin-top:8px;padding:8px 12px;background:var(--accent);color:#fff;text-decoration:none;border-radius:6px}
+main{padding:20px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--card);padding:16px;border-radius:8px;box-shadow:0 1px 4px rgba(16,24,40,0.04)}
+.site-footer{border-top:1px solid #e6eaea;padding:14px 0;margin-top:24px;background:#fff}
+@media (min-width:720px){.site-header .container{flex-direction:row;justify-content:space-between;align-items:center}}
